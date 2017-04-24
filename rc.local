@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# /etc/rc.local: Local multi-user startup script.
+#
+
+powertop --auto-tune
+echo 0 > /sys/module/hid_apple/parameters/iso_layout
+ifconfig wlp3s0 down
+ifconfig wlp3s0 up
+
+return 0

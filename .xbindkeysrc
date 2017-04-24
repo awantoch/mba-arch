@@ -1,0 +1,12 @@
+"xte 'key Super_L'"
+  b:8+Release
+
+"xte 'keydown Shift_L' 'keydown Super_L' 'key Page_Down' && xte 'keyup Shift_L' 'keyup Super_L'"
+  b:9+Release
+
+"xte 'keydown Control_L' 'keydown Alt_L' 'key Down' && xte 'keyup Control_L' 'keyup Alt_L'"
+  b:10+Release
+
+"xte 'keydown Control_L' 'keydown Alt_L' 'key Up' && xte 'keyup Control_L' 'keyup Alt_L'"
+  b:11+Release
+
