@@ -13,6 +13,9 @@ sudo cp 50-mtrack.conf /usr/share/X11/xorg.conf.d/
 echo "Copying rc.local..."
 sudo cp rc.local /etc/rc.local
 
+echo "Copying tilde fix to modprobe.d..."
+sudo cp hid_apple.conf /etc/modprobe.d/
+
 echo "Copying xbindkeys config..."
 cp .xbindkeysrc ~/.xbindkeysrc
 
