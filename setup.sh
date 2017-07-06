@@ -3,7 +3,7 @@
 # install stuff
 
 sudo pacman -S yaourt
-yaourt -Sya bcwc-pcie-dkms bcwc-pcie-firmware macfanctld xf86-input-mtrack-git broadcom-wl-dkms xbindkeys
+yaourt -Sya bcwc-pcie-dkms bcwc-pcie-firmware macfanctld xf86-input-mtrack-git broadcom-wl-dkms xbindkeys xautomation
 
 # copy stuff
 
