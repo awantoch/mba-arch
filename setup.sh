@@ -2,8 +2,8 @@
 
 # install stuff
 
-sudo pacman -S yaourt
-yaourt -Sya bcwc-pcie-dkms bcwc-pcie-firmware macfanctld xf86-input-mtrack-git broadcom-wl-dkms xbindkeys xautomation
+sudo pacman -S yaourt fakeroot autoconf automake powertop htop
+yaourt -Sya bcwc-pcie-git macfanctld xf86-input-mtrack-git xbindkeys xautomation grub-customizer
 
 # copy stuff
 
@@ -21,6 +21,9 @@ cp .xbindkeysrc ~/.xbindkeysrc
 
 echo "Copying xbindkeys autostart..."
 cp xbindkeys.desktop ~/.config/autostart/
+
+echo "Copying Suspend fix..make sure to have swap!"
+cp 90-xhc_sleep.rules /etc/udev/rules.d/90-xhc_sleep.rules
 
 echo "RECOMMENDED: Please add 'acpi_osi=' to your kernel params for more power savings!"
 echo "Done!"
