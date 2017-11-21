@@ -25,5 +25,11 @@ cp xbindkeys.desktop ~/.config/autostart/
 echo "Copying Suspend fix..make sure to have swap!"
 cp 90-xhc_sleep.rules /etc/udev/rules.d/90-xhc_sleep.rules
 
+echo "Copying resume wifi fix..."
+cp resume.sh /etc/resume.sh
+cp resume.service /etc/systemd/system/resume.service
+systemctl daemon-reload
+systemctl enable resume
+
 echo "RECOMMENDED: Please add 'acpi_osi=' to your kernel params for more power savings!"
 echo "Done!"

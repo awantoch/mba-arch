@@ -1,0 +1,11 @@
+[Unit]
+Description=Local system resume actions
+After=suspend.target
+
+[Service]
+Type=simple
+ExecStart=/etc/resume.sh
+ExecStartPost=/usr/bin/sleep 1
+
+[Install]
+WantedBy=suspend.target
