@@ -2,7 +2,7 @@
 
 Linux is fantastic on a Macbook Air. Whether you're dual-booting or triple-booting, having a complete setup is a necessity.
 
-These are some helpful tweaks to get an installed system with GNOME 3 running as best as it can (if you're not running GNOME 3, you won't get touchpad gestures). 
+These are some helpful tweaks to get an installed system with GNOME 3 running as best as it can (if you're not running GNOME 3, you'll have to modify xbindkeysrc to suit your desktop environment). 
 
 These tweaks include:
 
